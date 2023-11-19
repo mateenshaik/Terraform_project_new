@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  ami                         = "ami-0a7cf821b91bcccbc" #Ubuntu 20.04 LTS Free Tier Image
+  ami                         = "ami-0287a05f0ef0e9d9a" #Ubuntu 20.04 LTS Free Tier Image
   instance_type               = "t2.micro"
   key_name                    = "goku"
   subnet_id                   = aws_subnet.public_subnet.id
