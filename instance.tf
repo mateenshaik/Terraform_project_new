@@ -5,7 +5,7 @@ resource "aws_instance" "web" {
   subnet_id                   = aws_subnet.public_subnet.id
   vpc_security_group_ids      = [aws_security_group.allow_http_ssh.id]
   user_data                   = file("nginx-install.sh")
-  availability_zone           = "ap-south-1"
+  availability_zone           = "ap-south-1a"
   associate_public_ip_address = true
 
   tags = {
